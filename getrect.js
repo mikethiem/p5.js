@@ -1,7 +1,6 @@
 /You have to create some rectangles that fall from the top of the screen to 
 //to the bottom
-var rectY = [???];//replace the ??????
-
+var rectY = [5,100,10];
 function setup() {
   createCanvas(400, 400);
 }
@@ -11,7 +10,7 @@ function draw() {
   rectMode(CENTER);
   fill(255);
   for (var i = 0; i < rectY.length; i++) {
-    rect((i + 1) * 100, rectY[?], 50, 25);//replace the question mark
-    rectY[i] += 1; // Replace this comment with an explanation
+    rect((i+1) * 100, rectY[i], 50, 25);
+    rectY[i] += 1; 
   }
 }
